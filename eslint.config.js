@@ -1,0 +1,12 @@
+import nyxb from '@nyxb/eslint-config'
+
+export default nyxb({
+   rules: {
+      'style/max-statements-per-line': 0,
+      'vue/require-v-for-key': 0,
+      'ts/no-use-before-define': 0,
+      'nyxb/no-import-node-modules-by-path': 0,
+      'jsdoc/require-returns-description': 0,
+      'jsdoc/require-property-description': 0,
+   },
+})
