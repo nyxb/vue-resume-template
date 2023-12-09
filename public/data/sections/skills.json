@@ -1,0 +1,300 @@
+{
+  "locales": {
+    "en": {
+      "title": "<span class='text-primary'>Skill</span> Set",
+      "description": "Exploring the diverse range of skills I've acquired and developed:"
+    },
+    "de": {
+      "title": "<span class='text-primary'>Fähigkeiten</span>",
+      "description": "Erkunden Sie die vielfältige Palette an Fähigkeiten, die ich erworben und entwickelt habe:"
+    },
+    "it": {
+      "title": "<span class='text-primary'>Set di Competenze</span>",
+      "description": "Esplorare la variegata gamma di competenze che ho acquisito e sviluppato:"
+    }
+  },
+
+  "subcategories": [
+    {
+      "id": "abilities",
+      "type": "list",
+      "progress": null,
+      "faIcon": "fa-solid fa-square",
+      "locales": {
+        "en": { "title": null }
+      }
+    },
+
+    {
+      "id": "programming",
+      "type": "grid",
+      "progress": "number",
+      "faIcon": "fa fa-code",
+      "locales": {
+        "en": { "title": "Programming" },
+        "de": { "title": "Programmierung" },
+        "it": { "title": "Programmazione" }
+      }
+    },
+
+    {
+      "id": "languages",
+      "type": "list",
+      "progress": { "0": "beginner", "20": "rookie", "40": "intermediate", "60": "advanced", "80": "fluent", "100": "native" },
+      "faIcon": "fa fa-language",
+      "locales": {
+        "en": { "title": "Languages" },
+        "de": { "title": "Sprachen" },
+        "it": { "title": "Lingue" }
+      }
+    },
+
+    {
+      "id": "extra",
+      "type": "grid",
+      "progress": null,
+      "faIcon": "fa fa-marker",
+      "locales": {
+        "en": { "title": "Bonus Skills" },
+        "de": { "title": "Zusatzfähigkeiten" },
+        "it": { "title": "Abilità Bonus" }
+      }
+    }
+
+  ],
+
+  "items": {
+    "abilities": [
+      {
+        "imageIconUrl": null,
+        "faIcon": "fas fa-code",
+        "value": null,
+        "locales": {
+          "en": {
+            "title": "Advanced Programming",
+            "description": "Expert in sophisticated coding techniques across multiple languages, demonstrating unparalleled proficiency in developing complex, efficient, and innovative software solutions."
+          },
+          "de": {
+            "title": "Fortgeschrittene Programmierung",
+            "description": "Experte in anspruchsvollen Programmiermethoden in mehreren Sprachen, demonstriert beispiellose Kompetenz in der Entwicklung komplexer, effizienter und innovativer Softwarelösungen."
+          },
+          "it": {
+            "title": "Programmazione Avanzata",
+            "description": "Esperto in tecniche di codifica sofisticate su più linguaggi, dimostrando una competenza senza pari nello sviluppo di soluzioni software complesse, efficienti e innovative."
+          }
+        }
+      },
+      {
+        "imageIconUrl": null,
+        "faIcon": "fas fa-user-shield",
+        "value": null,
+        "locales": {
+          "en": {
+            "title": "Cybersecurity Mastery",
+            "description": "Renowned for advanced skills in cybersecurity, excelling in penetration testing, threat analysis, and the implementation of robust security protocols to safeguard information."
+          },
+          "de": {
+            "title": "Meisterschaft in Cybersicherheit",
+            "description": "Bekannt für fortgeschrittene Fähigkeiten in der Cybersicherheit, hervorragend in Penetrationstests, Bedrohungsanalyse und der Implementierung robuster Sicherheitsprotokolle zum Schutz von Informationen."
+          },
+          "it": {
+            "title": "Maestria in Cybersecurity",
+            "description": "Rinomato per le avanzate competenze in cybersecurity, eccellente nei test di penetrazione, analisi delle minacce e nell'implementazione di protocolli di sicurezza robusti per salvaguardare le informazioni."
+          }
+        }
+      },
+      {
+        "imageIconUrl": null,
+        "faIcon": "fas fa-network-wired",
+        "value": null,
+        "locales": {
+          "en": {
+            "title": "Network Engineering",
+            "description": "Specialist in network architecture, proficient in designing, implementing, and managing complex network infrastructures to optimize performance and reliability."
+          },
+          "de": {
+            "title": "Netzwerktechnik",
+            "description": "Spezialist in Netzwerkarchitektur, versiert im Entwerfen, Implementieren und Verwalten komplexer Netzwerkinfrastrukturen zur Optimierung von Leistung und Zuverlässigkeit."
+          },
+          "it": {
+            "title": "Ingegneria di Rete",
+            "description": "Specialista in architettura di rete, abile nella progettazione, implementazione e gestione di infrastrutture di rete complesse per ottimizzare le prestazioni e l'affidabilità."
+          }
+        }
+      },
+      {
+        "imageIconUrl": null,
+        "faIcon": "fas fa-server",
+        "value": null,
+        "locales": {
+          "en": {
+            "title": "System Administration Expertise",
+            "description": "Master in system administration, showcasing exceptional skills in managing server infrastructures, optimizing system operations, and ensuring high availability and security."
+          },
+          "de": {
+            "title": "Expertise in Systemadministration",
+            "description": "Meister in Systemadministration, zeigt außergewöhnliche Fähigkeiten im Management von Serverinfrastrukturen, Optimierung von Systemoperationen und Gewährleistung hoher Verfügbarkeit und Sicherheit."
+          },
+          "it": {
+            "title": "Esperto di Amministrazione di Sistema",
+            "description": "Maestro in amministrazione di sistema, dimostrando abilità eccezionali nella gestione delle infrastrutture dei server, ottimizzazione delle operazioni di sistema e assicurando alta disponibilità e sicurezza."
+          }
+        }
+      }
+    ],
+
+    "programming": [
+      {
+        "imageIconUrl": null,
+        "faIcon": "fab fa-html5",
+        "value": 95,
+        "locales": {
+          "en": { "title": "HTML 5", "description": "Experience Time: 20 years" },
+          "de": { "title": "HTML 5", "description": "Erfahrungsdauer: 20 Jahre" },
+          "it": { "title": "HTML 5", "description": "Tempo di esperienza: 20 anni" }
+        }
+      },
+
+      {
+        "imageIconUrl": null,
+        "faIcon": "fab fa-css3-alt",
+        "value": 90,
+        "locales": {
+          "en": { "title": "CSS 3", "description": "Experience Time: 20 years" },
+          "de": { "title": "CSS 3", "description": "Erfahrungsdauer: 20 Jahre" },
+          "it": { "title": "CSS 3", "description": "Tempo di esperienza: 20 anni" }
+        }
+      },
+
+      {
+        "imageIconUrl": null,
+        "faIcon": "fab fa-sass",
+        "value": 90,
+        "locales": {
+          "en": { "title": "Sass/Less", "description": "Experience Time: 16 years" },
+          "de": { "title": "Sass/Less", "description": "Erfahrungsdauer: 16 Jahre" },
+          "it": { "title": "Sass/Less", "description": "Tempo di esperienza: 16 anni" }
+        }
+      },
+
+      {
+        "imageIconUrl": null,
+        "faIcon": "fab fa-ts-square",
+        "value": 99,
+        "locales": {
+          "en": { "title": "TypeScript", "description": "Experience Time: 9 years" },
+          "de": { "title": "TypeScript", "description": "Erfahrungsdauer: 9 Jahre" },
+          "it": { "title": "TypeScript", "description": "Tempo di esperienza: 9 anni" }
+        }
+      },
+
+      {
+        "imageIconUrl": null,
+        "faIcon": "fab fa-vuejs",
+        "value": 100,
+        "locales": {
+          "en": { "title": "Vue 3", "description": "Experience Time: 2 years" },
+          "de": { "title": "Vue 3", "description": "Erfahrungsdauer: 2 Jahre" },
+          "it": { "title": "Vue 3", "description": "Erfahrungsdauer: 2 anni" }
+        }
+      },
+
+      {
+        "imageIconUrl": null,
+        "faIcon": "fab fa-react",
+        "value": 100,
+        "locales": {
+          "en": { "title": "React", "description": "Experience Time: 9 year" },
+          "de": { "title": "React", "description": "Erfahrungsdauer: 9 Jahr" },
+          "it": { "title": "React", "description": "Erfahrungsdauer: 9 anno" }
+        }
+      }
+    ],
+
+    "languages": [
+      {
+        "imageIconUrl": "images/flags/de.png",
+        "faIcon": null,
+        "value": 100,
+        "locales": {
+          "en": { "title": "German", "description": "Native speaker with excellent communication and writing skills." },
+          "de": { "title": "Deutsch", "description": "Muttersprachler mit ausgezeichneten Kommunikations- und Schreibfähigkeiten." },
+          "it": { "title": "Tedesco", "description": "Madrelingua con eccellenti capacità di comunicazione e scrittura." }
+        }
+      },
+
+      {
+        "imageIconUrl": "images/flags/en.png",
+        "faIcon": null,
+        "value": 90,
+        "locales": {
+          "en": { "title": "Englisch", "description": "Fluent in both spoken and written Spanish; confident in professional communication." },
+          "de": { "title": "Englisch", "description": "Fließend in gesprochenem und geschriebenem Englisch; sicher in beruflicher Kommunikation." },
+          "it": { "title": "Inglese", "description": "Fluente sia nella lingua parlata che in quella scritta; sicuro nella comunicazione professionale." }
+        }
+      },
+
+      {
+        "imageIconUrl": "images/flags/it.png",
+        "faIcon": null,
+        "value": 10,
+        "locales": {
+          "en": { "title": "Italian", "description": "Basic understanding of Italian; learning and improving." },
+          "de": { "title": "Italienisch", "description": "Grundverständnis für Italienisch; Lernen und Verbessern." },
+          "it": { "title": "Italiano", "description": "Comprensione di base dell'italiano; apprendimento e miglioramento." }
+        }
+      }
+    ],
+
+    "extra": [
+      {
+        "locales": {
+          "en": { "title": "Cross-Platform App Development", "description": "Proficient in developing seamless and efficient cross-platform applications, ensuring a high-quality user experience on all devices." },
+          "de": { "title": "Cross-Platform-App-Entwicklung", "description": "Versiert in der Entwicklung nahtloser und effizienter Cross-Platform-Anwendungen, um eine hochwertige Benutzererfahrung auf allen Geräten zu gewährleisten." },
+          "it": { "title": "Sviluppo di Applicazioni Cross-Platform", "description": "Esperto nello sviluppo di applicazioni cross-platform fluide ed efficienti, garantendo un'esperienza utente di alta qualità su tutti i dispositivi." }
+        }
+      },
+
+      {
+        "locales": {
+          "en": { "title": "NPM Library Development", "description": "Expertise in creating and maintaining versatile NPM libraries, contributing to the open-source community with innovative and reliable solutions." },
+          "de": { "title": "NPM-Bibliotheksentwicklung", "description": "Expertise im Erstellen und Warten vielseitiger NPM-Bibliotheken, Beitrag zur Open-Source-Community mit innovativen und zuverlässigen Lösungen." },
+          "it": { "title": "Sviluppo di Librerie NPM", "description": "Competenza nella creazione e manutenzione di librerie NPM versatili, contribuendo alla comunità open source con soluzioni innovative e affidabili." }
+        }
+      },
+
+      {
+        "locales": {
+          "en": { "title": "Full-Stack Web Development", "description": "Skilled in both front-end and back-end development, delivering comprehensive and scalable web solutions." },
+          "de": { "title": "Full-Stack-Webentwicklung", "description": "Geschickt in Front-End- und Back-End-Entwicklung, Bereitstellung umfassender und skalierbarer Web-Lösungen." },
+          "it": { "title": "Sviluppo Web Full-Stack", "description": "Abile sia nello sviluppo front-end che back-end, fornendo soluzioni web complete e scalabili." }
+        }
+      },
+
+      {
+        "locales": {
+          "en": { "title": "Cybersecurity Expertise", "description": "Achieved Omniscient level on Hack The Box, demonstrating advanced skills in cybersecurity and ethical hacking." },
+          "de": { "title": "Cybersicherheitsexpertise", "description": "Erreichung des Omniscient-Levels auf Hack The Box, Demonstration fortgeschrittener Fähigkeiten in Cybersicherheit und ethischem Hacking." },
+          "it": { "title": "Esperto di Cybersecurity", "description": "Raggiunto il livello Omniscient su Hack The Box, dimostrando competenze avanzate in cybersecurity e hacking etico." }
+        }
+      },
+
+      {
+        "locales": {
+          "en": { "title": "Artificial Intelligence Engagement", "description": "Engaged in AI technology, leveraging machine learning and data analysis to drive innovation and efficiency." },
+          "de": { "title": "Künstliche Intelligenz Engagement", "description": "Engagement in KI-Technologie, Nutzung von maschinellem Lernen und Datenanalyse zur Förderung von Innovation und Effizienz." },
+          "it": { "title": "Impegno nell'Intelligenza Artificiale", "description": "Impegnato nella tecnologia AI, sfruttando l'apprendimento automatico e l'analisi dei dati per guidare innovazione ed efficienza." }
+        }
+      },
+
+      {
+        "locales": {
+          "en": { "title": "Open Source Contributions", "description": "Active contributor to the open source community, initiating and maintaining various projects, including the innovative 'Conventional-Emoji-Commits' convention." },
+          "de": { "title": "Open-Source-Beiträge", "description": "Aktiver Beitragender in der Open-Source-Community, Initiierung und Pflege verschiedener Projekte, einschließlich der innovativen 'Conventional-Emoji-Commits'-Konvention." },
+          "it": { "title": "Contributi Open Source", "description": "Contributore attivo nella comunità open source, avviando e mantenendo vari progetti, incluso l'innovativa convenzione 'Conventional-Emoji-Commits'." }
+        }
+      }
+    ]
+
+  }
+}

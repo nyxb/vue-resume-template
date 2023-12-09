@@ -1,0 +1,34 @@
+{
+  "locales": {
+    "en": {
+      "welcome": "Welcome to my <span class='text-primary'>Resume!</span>",
+      "welcomeShort": "Welcome!",
+      "bio": "As an aspiring IT specialist in application development and an experienced open sourcerer, I infuse innovative ideas into software development. My enthusiasm for technical solutions and educational initiatives drives me to realize outstanding digital projects. Let's collaborate and create something extraordinary together."
+    },
+    "de": {
+      "welcome": "Willkommen zu meinem <span class='text-primary'>Lebenslauf!</span>",
+      "welcomeShort": "Willkommen!",
+      "bio": "Als angehender Fachinformatiker in Anwendungsentwicklung und erfahrener Open Sourcerer bringe ich innovative Ideen in die Softwareentwicklung. Meine Begeisterung für technische Lösungen und Bildungsinitiativen treibt mich an, herausragende digitale Projekte zu realisieren. Lassen Sie uns gemeinsam Außergewöhnliches schaffen."
+    },
+    "it": {
+      "welcome": "Benvenuti nel mio <span class='text-primary'>Curriculum!</span>",
+      "welcomeShort": "Benvenuti!",
+      "bio": "Come aspirante specialista IT nello sviluppo di applicazioni e come esperto open sourcerer, infondo idee innovative nello sviluppo del software. La mia passione per le soluzioni tecniche e le iniziative educative mi spinge a realizzare progetti digitali eccezionali. Collaboriamo e creiamo qualcosa di straordinario insieme."
+    }
+  },
+
+  "items": {
+    "socialCircles": [
+      "@link{profile.contact.instagram}",
+      "@link{profile.contact.x-twitter}",
+      "@link{profile.contact.linkedin}",
+      "@link{profile.contact.github}"
+    ],
+
+    "contactListItems": [
+      "@link{profile.contact.address}",
+      "@link{profile.contact.email}",
+      "@link{profile.contact.phone}"
+    ]
+  }
+}

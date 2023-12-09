@@ -1,0 +1,77 @@
+{
+  "name": "Dennis Ollhoff",
+  "profilePictureUrl": "images/pictures/avatar.png",
+
+  "locales": {
+    "en": {
+      "credits": "Designed by <strong><a class='light' href='https://github.com/nyxb'>Dennis Ollhoff</a></strong>",
+      "role": "Developer"
+    },
+    "de": {
+      "credits": "Erstellt von <strong><a class='light' href='https://github.com/nyxb'>Dennis Ollhoff</a></strong>",
+      "role": "Developer"
+    },
+    "it": {
+      "credits": "Progettato da <strong><a class='light' href='https://github.com/nyxb'>Dennis Ollhoff</a></strong>",
+      "role": "Sviluppatore"
+    }
+  },
+
+  "contact": {
+    "address": {
+      "id": "address",
+      "value": "Sootweg 1a, 22175 Hamburg",
+      "valueShort": "Hamburg 22175",
+      "faIcon": "fa-solid fa-city",
+      "href": null
+    },
+
+    "email": {
+      "id": "email",
+      "value": "dennis.ollhoff@nyxb.email",
+      "valueShort": "dennis.ollhoff@nyxb.email",
+      "faIcon": "fa-solid fa-envelope",
+      "href": "mailto:dennis.ollhoff@nyxb.email"
+    },
+
+    "x-twitter": {
+      "id": "x-twitter",
+      "value": "@nyxb0",
+      "valueShort": "@nyxb0",
+      "faIcon": "fa-brands fa-x-twitter",
+      "href": "https://x.com/nyxb0"
+    },
+
+    "github": {
+      "id": "github",
+      "value": "@nyxb",
+      "valueShort": "@nyxb",
+      "faIcon": "fa-brands fa-github",
+      "href": "https://github.com/nyxb"
+    },
+
+    "instagram": {
+      "id": "instagram",
+      "value": "@nyxb_0",
+      "valueShort": "@nyxb_0",
+      "faIcon": "fa-brands fa-instagram",
+      "href": "https://instagram.com/nyxb_0"
+    },
+
+    "linkedin": {
+      "id": "linkedin",
+      "value": "@nyxb",
+      "valueShort": "@nyxb",
+      "faIcon": "fa-brands fa-linkedin",
+      "href": "www.linkedin.com/in/nyxb"
+    },
+
+    "phone": {
+      "id": "phone",
+      "value": "+49 17657723569",
+      "valueShort": "+49 17657723569",
+      "faIcon": "fa-solid fa-phone",
+      "href": "tel:+4917657723569"
+    }
+  }
+}

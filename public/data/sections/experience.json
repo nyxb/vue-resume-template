@@ -1,0 +1,78 @@
+{
+  "locales": {
+    "en": {
+      "title": "<span class='text-primary'>Professional</span> Experience",
+      "description": "A look into my work experience and career journey."
+    },
+    "de": {
+      "title": "<span class='text-primary'>Berufliche</span> Erfahrung",
+      "description": "Ein Blick auf meine Berufserfahrung und Karrierereise."
+    },
+    "it": {
+      "title": "<span class='text-primary'>Esperienza</span> Professionale",
+      "description": "Uno sguardo alla mia esperienza lavorativa e al mio percorso di carriera."
+    }
+  },
+
+  "items": [
+    {
+      "id": "experience_item_1",
+      "place": "@link{places.freelancer}",
+      "period": ["2013/03", "2022/06"],
+      "locales": {
+        "en": {
+          "title": "Fullstack Developer",
+          "description": "Specialized in developing dynamic web applications using Vue, Nuxt, React, and Next. Also experienced in creating cross-platform mobile apps with React Native and desktop applications with Tauri. Active in the open-source community, contributing to various projects."
+        },
+        "de": {
+          "title": "Fullstack-Entwickler",
+          "description": "Spezialisiert auf die Entwicklung dynamischer Webanwendungen mit Vue, Nuxt, React und Next. Auch erfahren in der Erstellung plattformübergreifender mobiler Apps mit React Native und Desktop-Anwendungen mit Tauri. Aktiv in der Open-Source-Community, Beitrag zu verschiedenen Projekten."
+        },
+        "it": {
+          "title": "Sviluppatore Fullstack",
+          "description": "Specializzato nello sviluppo di applicazioni web dinamiche con Vue, Nuxt, React e Next. Esperto anche nella creazione di app mobili cross-platform con React Native e applicazioni desktop con Tauri. Attivo nella comunità open-source, contribuendo a vari progetti."
+        }
+      }
+    },
+
+    {
+      "id": "experience_item_2",
+      "place": "@link{places.tech}",
+      "period": ["2022/10", "now"],
+      "locales": {
+        "en": {
+          "title": "Educator and Content Creator",
+          "description": "Developing an educational platform and YouTube channel focused on cybersecurity and software development. Conducting seminars and teaching, promoting IT education. Also managing a tech blog, sharing insights and tutorials related to tech and programming."
+        },
+        "de": {
+          "title": "Bildungsexperte und Inhaltskreator",
+          "description": "Entwicklung einer Bildungsplattform und eines YouTube-Kanals mit Fokus auf Cybersecurity und Softwareentwicklung. Durchführung von Seminaren und Lehrtätigkeit, Förderung der IT-Ausbildung. Betreibt außerdem einen Tech-Blog, auf dem Einblicke und Tutorials zu Technik und Programmierung geteilt werden."
+        },
+        "it": {
+          "title": "Educatore e Creatore di Contenuti",
+          "description": "Sviluppo di una piattaforma educativa e un canale YouTube focalizzato su cybersecurity e sviluppo software. Conduzione di seminari e insegnamento, promozione dell'educazione IT. Gestisce anche un blog tecnologico, condividendo intuizioni e tutorial relativi a tecnologia e programmazione."
+        }
+      }
+    },
+
+    {
+      "id": "experience_item_3",
+      "place": "@link{places.ausbildung}",
+      "period": ["2023/07", "2025/07"],
+      "locales": {
+        "en": {
+          "title": "Apprenticeship in IT Development",
+          "description": "Pursuing an apprenticeship in application development, acquiring essential skills for a career in software and IT security. Post-apprenticeship plans include starting a distance learning degree in Cybersecurity."
+        },
+        "de": {
+          "title": "Ausbildung zum Fachinformatiker",
+          "description": "Absolvierung einer Ausbildung im Bereich Anwendungsentwicklung, Erlangung wesentlicher Fähigkeiten für eine Karriere in Software und IT-Sicherheit. Nach der Ausbildung ist geplant, ein Fernstudium im Bereich Cybersecurity zu beginnen."
+        },
+        "it": {
+          "title": "Apprendistato in Sviluppo IT",
+          "description": "Inseguimento di un tirocinio in sviluppo applicativo, acquisendo competenze essenziali per una carriera nel software e nella sicurezza informatica. Piani post-apprendistato includono l'inizio di un corso di laurea a distanza in Cybersecurity."
+        }
+      }
+    }
+  ]
+}

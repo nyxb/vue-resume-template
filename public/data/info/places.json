@@ -1,0 +1,89 @@
+{
+  "freelancer": {
+    "logoUrl": "images/places/logo-freelance.png",
+    "faIcon": "fa fa-house-laptop",
+    "locales": {
+      "en": { "name": "Nyxb Digital Solutions" }
+    }
+  },
+
+  "tech": {
+    "logoUrl": "images/places/logo-tech.png",
+    "faIcon": "fa-solid fa-person-chalkboard",
+    "locales": {
+      "en": { "name": "Nyxb Academy" }
+    }
+  },
+
+  "ausbildung": {
+    "logoUrl": "images/places/logo-ausbildung.png",
+    "faIcon": "fa fa-house-laptop",
+    "locales": {
+      "en": { "name": "IBB" }
+    }
+  },
+
+  "around": {
+    "logoUrl": null,
+    "faIcon": "fa-sharp fa-solid fa-circle-notch",
+    "locales": {
+      "en": { "name": "Around" }
+    }
+  },
+
+  "ibb": {
+    "logoUrl": "images/places/logo-ibb.png",
+    "faIcon": "fas fa-graduation-cap",
+    "locales": {
+      "en": { "name": "IBB Continuing Education" },
+      "de": { "name": "IBB Weiter mit Bildung" },
+      "it": { "name": "IBB Avanti con l'Educazione" }
+    }
+  },
+
+  "udacity": {
+    "logoUrl": "images/places/logo-udacity.png",
+    "faIcon": "fa fa-house-laptop",
+    "locales": {
+      "en": { "name": "Udacity" }
+    }
+  },
+
+  "abitur": {
+    "logoUrl": "images/places/logo-abitur.png",
+    "faIcon": "fas fa-graduation-cap",
+    "locales": {
+      "en": { "name": "German High School Diploma (Abitur) from Hamburg" },
+      "de": { "name": "Abitur Hamburg" },
+      "it": { "name": "Maturità ad Amburgo" }
+    }
+  },
+
+  "redhat": {
+    "faIcon": "fa-brands fa-redhat",
+    "locales": {
+      "en": { "name": "Red Hat, Inc." }
+    }
+  },
+
+  "open-group": {
+    "faIcon": "fa-solid fa-user-group",
+    "locales": {
+      "en": { "name": "The Open Group" }
+    }
+  },
+
+  "scrum": {
+    "faIcon": "fa-brands fa-fulcrum",
+    "locales": {
+      "en": { "name": "Scrum Alliance Inc." }
+    }
+  },
+
+  "cisco": {
+    "faIcon": "fa-solid fa-hand-scissors",
+    "locales": {
+      "en": { "name": "Cisco Systems, Inc." }
+    }
+  }
+}

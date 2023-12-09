@@ -1,0 +1,78 @@
+{
+  "locales": {
+    "en": {
+      "title": "<span class='text-primary'>Educational</span> Background",
+      "description": "A comprehensive journey through my extensive self-paced learning via online courses, formal education, and professional development."
+    },
+    "de": {
+      "title": "<span class='text-primary'>Bildungs</span>hintergrund",
+      "description": "Eine umfassende Reise durch mein ausgedehntes Selbststudium mittels Online-Kursen, formaler Bildung und beruflicher Weiterentwicklung."
+    },
+    "it": {
+      "title": "<span class='text-primary'>Formazione</span> Scolastica",
+      "description": "Un percorso comprensivo attraverso il mio ampio apprendimento autonomo tramite corsi online, educazione formale e sviluppo professionale."
+    }
+  },
+
+  "items": [
+    {
+      "id": "abitur",
+      "place": "@link{places.abitur}",
+      "period": ["2012/08", "2013/07"],
+      "locales": {
+        "en": {
+          "title": "Abitur - University Entrance Qualification",
+          "description": "Achieved the general qualification for university entrance through self-study and successful completion of external state examinations."
+        },
+        "de": {
+          "title": "Abitur - Allgemeine Hochschulreife",
+          "description": "Erwerb der allgemeinen Hochschulreife durch Selbststudium und erfolgreiche Teilnahme an externen staatlichen Prüfungen."
+        },
+        "it": {
+          "title": "Abitur - Qualificazione per l'accesso all'università",
+          "description": "Ottenuto la qualificazione generale per l'accesso all'università attraverso l'autoapprendimento e il superamento degli esami di stato esterni."
+        }
+      }
+    },
+    {
+      "id": "online_course_udacity",
+      "place": "@link{places.udacity}",
+      "period": ["2012/09", "2023/12"],
+
+      "locales": {
+        "en": {
+          "title": "Extensive Online Coursework",
+          "description": "Completed over 1170 online courses in various fields including programming, cybersecurity, and design. This ongoing self-directed learning path has equipped me with a robust set of technical skills and practical knowledge."
+        },
+        "de": {
+          "title": "Umfangreiche Online-Kursarbeit",
+          "description": "Über 1170 Online-Kurse in verschiedenen Bereichen, einschließlich Programmierung, Cybersecurity und Design, fortlaufend erfolgreich abgeschlossen. Dieser kontinuierliche selbstgesteuerte Lernweg hat mich mit einem robusten Set an technischen Fähigkeiten und praktischem Wissen ausgestattet."
+        },
+        "it": {
+          "title": "Ampia Formazione Online",
+          "description": "Completati oltre 1170 corsi online in vari campi inclusi programmazione, cybersecurity e design. Questo percorso di apprendimento autodiretto e continuo mi ha dotato di un solido insieme di competenze tecniche e conoscenze pratiche."
+        }
+      }
+    },
+
+    {
+      "id": "current_education_it",
+      "place": "@link{places.ibb}",
+      "period": ["2023/07", "2025/07"],
+      "locales": {
+        "en": {
+          "title": "Apprenticeship in IT Application Development",
+          "description": "Currently pursuing an apprenticeship in IT application development, aiming to lay the groundwork for a future in cybersecurity studies."
+        },
+        "de": {
+          "title": "Ausbildung zum Fachinformatiker in Anwendungsentwicklung",
+          "description": "Derzeit absolviere ich eine Ausbildung zum Fachinformatiker in Anwendungsentwicklung, um die Grundlage für ein zukünftiges Studium im Bereich Cybersecurity zu schaffen."
+        },
+        "it": {
+          "title": "Apprendistato in Sviluppo Applicazioni IT",
+          "description": "Attualmente sto seguendo un apprendistato nello sviluppo di applicazioni IT, con l'obiettivo di gettare le basi per studi futuri nel campo della cybersecurity."
+        }
+      }
+    }
+  ]
+}

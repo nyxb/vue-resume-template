@@ -1,0 +1,259 @@
+{
+  "locales": {
+    "en": {
+      "title": "My <span class='text-primary'>Development Portfolio</span>",
+      "description": "Discover a range of my recent projects in web development and innovative programming. More projects can be found on <a href='https://nyxb.nexus/projects' target='_blank'>nyxb.nexus</a>."
+    },
+    "de": {
+      "title": "Mein <span class='text-primary'>Entwicklungsportfolio</span>",
+      "description": "Entdecken Sie eine Auswahl meiner neuesten Projekte im Bereich Webentwicklung und innovativer Programmierung. Weitere Projekte finden Sie auf <a href='https://nyxb.nexus/projects' target='_blank'>nyxb.nexus</a>."
+    },
+    "it": {
+      "title": "Il mio <span class='text-primary'>Portfolio di Sviluppo</span>",
+      "description": "Esplora una selezione dei miei progetti recenti in sviluppo web e programmazione innovativa. Altri progetti si trovano su <a href='https://nyxb.nexus/projects' target='_blank'>nyxb.nexus</a>."
+    }
+  },
+
+  "subcategories": [
+    {
+      "id": "react",
+      "locales": {
+        "en": { "title": "React Ecosystem" },
+        "de": { "title": "React Ökosystem" },
+        "it": { "title": "Ecosistema di React" }
+      }
+    },
+    {
+      "id": "nuxt",
+      "locales": {
+        "en": { "title": "Nuxt Ecosystem" },
+        "de": { "title": "Nuxt Ökosystem" },
+        "it": { "title": "Ecosistema di Nuxt" }
+      }
+    },
+    {
+      "id": "productivity",
+      "locales": {
+        "en": { "title": "Productivity" },
+        "de": { "title": "Produktivität" },
+        "it": { "title": "Produttività" }
+      }
+    },
+    {
+      "id": "websites",
+      "locales": {
+        "en": { "title": "Websites/Online Tools" },
+        "de": { "title": "Websites/Online Tools" },
+        "it": { "title": "Siti web/Strumenti online" }
+      }
+    },
+    {
+      "id": "vscode",
+      "locales": {
+        "en": { "title": "VS Code Extensions" },
+        "de": { "title": "VS Code Erweiterungen" },
+        "it": { "title": "Estensioni di VS Code" }
+      }
+    }
+  ],
+
+  "items": {
+    "react": [
+      {
+        "id": "reactchemy",
+        "title": "ReactChemy",
+        "logoUrl": "images/portfolio/project-logo-1.png",
+        "links": [
+          { "faIcon": "fa-brands fa-github", "href": "https://github.com/nyxb/reactchemy" },
+          { "faIcon": "fa-solid fa-globe", "href": "https://reactchemy.com/" }
+        ],
+        "locales": {
+          "en": {
+            "description": "<b>ReactChemy</b> Robust library, written in TypeScript, includes a variety of ready-to-use Hooks and Components.",
+            "tags": ["library", "react"]
+          },
+          "de": {
+            "description": "<b>ReactChemy</b> ist eine robuste Bibliothek, die in TypeScript geschrieben ist und eine Vielzahl von sofort einsatzbereiten Hooks und Komponenten enthält.",
+            "tags": ["Bibliothek", "React"]
+          },
+          "locales": {
+            "it": {
+              "description": "<b>ReactChemy</b> è una robusta libreria, scritta in TypeScript, che include una varietà di Hooks e Componenti pronti all'uso.",
+              "tags": ["libreria", "react"]
+            }
+          }
+        }
+      },
+
+      {
+        "id": "get-component",
+        "title": "Get Component",
+        "logoUrl": "images/portfolio/project-logo-2.png",
+        "links": [
+          { "faIcon": "fa-brands fa-github", "href": "https://github.com/nyxb/get-component" }
+        ],
+        "locales": {
+          "en": {
+            "description": "<b>Get Component</b> CLI for creating new React components",
+            "tags": ["react", "cli", "utility"]
+          },
+          "de": {
+            "description": "<b>Get Component</b> CLI zur Erstellung neuer React-Komponenten",
+            "tags": ["React", "CLI", "Dienstprogramm"]
+          },
+          "it": {
+            "description": "<b>Get Component</b> CLI per la creazione di nuovi componenti React",
+            "tags": ["react", "cli", "utility"]
+          }
+        }
+      }
+    ],
+
+    "nuxt": [
+      {
+        "id": "docux",
+        "title": "Docux",
+        "logoUrl": "images/portfolio/project-logo-3.png",
+        "links": [
+          { "faIcon": "fa-brands fa-github", "href": "https://github.com/nyxb/docux" },
+          { "faIcon": "fa-solid fa-globe", "href": "https://docux.dev/" }
+        ],
+        "locales": {
+          "en": {
+            "description": "<b>Docux</b> Document-driven websites with Vue & Markdown.",
+            "tags": ["nuxt", "documentation-generator", "nuxt-theme"]
+          },
+          "de": {
+            "description": "<b>Docux</b> Dokumentgesteuerte Websites mit Vue & Markdown.",
+            "tags": ["nuxt", "Dokumentationsgenerator", "nuxt-Thema"]
+          },
+          "it": {
+            "description": "<b>Docux</b> Siti web basati su documenti con Vue & Markdown.",
+            "tags": ["nuxt", "generatore di documentazione", "tema nuxt"]
+          }
+        }
+      }
+    ],
+
+    "productivity": [
+      {
+        "id": "kolibry",
+        "title": "Kolibry",
+        "logoUrl": "images/portfolio/project-logo-4.png",
+        "links": [
+          { "faIcon": "fa-brands fa-github", "href": "https://github.com/kolibry-js/kolibry" },
+          { "faIcon": "fa-solid fa-globe", "href": "https://kolibry.dev/" }
+        ],
+        "locales": {
+          "en": {
+            "description": "<b>Kolibry</b> Developer-Focused Presentation Slides",
+            "tags": ["markdown", "vue", "presentation", "slides", "vite", "vueuse"]
+          },
+          "de": {
+            "description": "<b>Kolibry</b> Präsentationsfolien für Entwickler",
+            "tags": ["markdown", "vue", "präsentation", "folien", "vite", "vueuse"]
+          },
+          "it": {
+            "description": "<b>Kolibry</b> Presentazioni focalizzate sugli sviluppatori",
+            "tags": ["markdown", "vue", "presentazione", "diapositive", "vite", "vueuse"]
+          }
+        }
+      }
+    ],
+    "websites": [
+      {
+        "id": "conventionale-emoji-commits",
+        "title": "Conventionale Emoji Commits",
+        "logoUrl": "images/portfolio/project-logo-5.png",
+        "links": [
+          { "faIcon": "fa-brands fa-github", "href": "https://github.com/conventional-emoji-commits/conventional-emoji-commits.site" },
+          { "faIcon": "fa-solid fa-globe", "href": "https://conventional-emoji-commits.site/" }
+        ],
+        "locales": {
+          "en": {
+            "description": "<b>Conventionale Emoji Commits</b> is a specification for adding human and machine readable meaning to commit messages using color-rich emojis 🌈",
+            "tags": ["emoji", "commits", "conventional", "conventional-commits", "conventional-emoji-commits"]
+          },
+          "de": {
+            "description": "<b>Konventionale Emoji-Commits</b> ist eine Spezifikation zur Hinzufügung von menschen- und maschinenlesbarer Bedeutung zu Commit-Nachrichten unter Verwendung von farbenfrohen Emojis 🌈",
+            "tags": ["emoji", "commits", "konventionell", "konventionelle-commits", "konventionale-emoji-commits"]
+          },
+          "it": {
+            "description": "<b>Commit Emoji Convenzionali</b> è una specifica per aggiungere significato leggibile da persone e macchine ai messaggi di commit utilizzando emoji ricche di colori 🌈",
+            "tags": ["emoji", "commit", "convenzionale", "commit-convenzionali", "commit-emoji-convenzionali"]
+          }
+        }
+      },
+      {
+        "id": "nyxb-blog",
+        "title": "Nyxb's Blog",
+        "logoUrl": "images/portfolio/project-logo-6.png",
+        "links": [
+          { "faIcon": "fa-solid fa-globe", "href": "https://nyxb.blog" }
+        ],
+        "locales": {
+          "en": {
+            "description": "<b>Nyxb's Blog</b> is a blog about web development, programming, Cybersecurity and productivity.",
+            "tags": ["react", "blog", "technical", "it"]
+          },
+          "de": {
+            "description": "<b>Nyxb's Blog</b> ist ein Blog über Webentwicklung, Programmierung, Cybersicherheit und Produktivität.",
+            "tags": ["react", "blog", "technisch", "it"]
+          },
+          "it": {
+            "description": "<b>Il Blog di Nyxb</b> è un blog dedicato allo sviluppo web, alla programmazione, alla cybersecurity e alla produttività.",
+            "tags": ["react", "blog", "tecnico", "it"]
+          }
+        }
+      },
+      {
+        "id": "personal-website",
+        "title": "Nyxb's Nexus",
+        "logoUrl": "images/portfolio/project-logo-7.png",
+        "links": [
+          { "faIcon": "fa-solid fa-globe", "href": "https://nyxb.nexus" }
+        ],
+        "locales": {
+          "en": {
+            "description": "<b>Nyxb's Nexus</b> is my personal website, where you can find my projects, talks, minds, my blog and my contact information.",
+            "tags": ["personal", "website"]
+          },
+          "de": {
+            "description": "<b>Nyxb's Nexus</b> ist meine persönliche Website, auf der Sie meine Projekte, Vorträge, Gedanken, meinen Blog und meine Kontaktdaten finden können.",
+            "tags": ["persönliche", "Website"]
+          },
+          "it": {
+            "description": "<b>Il Nexus di Nyxb</b> è il mio sito web personale, dove è possibile trovare i miei progetti, i miei discorsi, le mie opinioni, il mio blog e le mie informazioni di contatto.",
+            "tags": ["personale", "sito web"]
+          }
+        }
+      }
+    ],
+    "vscode": [
+      {
+        "id": "typescript-wizard",
+        "title": "Typescript Wizard",
+        "logoUrl": "images/portfolio/project-logo-8.png",
+        "links": [
+          { "faIcon": "fa-brands fa-github", "href": "https://github.com/nyxb/typescript-wizard" },
+          { "faIcon": "fa-solid fa-globe", "href": "https://typescript-wizard.vercel.app/" },
+          { "faIcon": "fa-brands fa-microsoft", "href": "https://marketplace.visualstudio.com/items?itemName=nyxb.typescript-wizard" }
+        ],
+        "locales": {
+          "en": {
+            "description": "<b>Typescript Wizard</b> Learn TypeScript in VSCode with a TypeScript error translator and syntax guide.",
+            "tags": ["learning", "typescript", "learn", "vscode-extension"]
+          },
+          "de": {
+            "description": "<b>Typescript Wizard</b> Lernen Sie TypeScript in VSCode mit einem TypeScript-Fehlerübersetzer und einem Syntaxhandbuch.",
+            "tags": ["lernen", "typescript", "lernen", "vscode-erweiterung"]
+          },
+          "it": {
+            "description": "<b>Typescript Wizard</b> Impara TypeScript in VSCode con un traduttore di errori TypeScript e una guida alla sintassi.",
+            "tags": ["apprendimento", "typescript", "imparare", "estensione vscode"]
+          }
+        }
+      }
+    ]
+  }
+}

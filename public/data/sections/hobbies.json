@@ -1,0 +1,169 @@
+{
+  "locales": {
+    "en": {
+      "title": "<span class='text-primary'>Hobbies</span> & Interests",
+      "description": "This is pretty much how I spend my free time:"
+    },
+    "de": {
+      "title": "<span class='text-primary'>Hobbys</span> & Interessen",
+      "description": "So verbringe ich im Wesentlichen meine Freizeit:"
+    },
+    "it": {
+      "title": "<span class='text-primary'>Hobby</span> & Interessi",
+      "description": "Ecco come trascorro il mio tempo libero:"
+    }
+  },
+
+  "subcategories": [
+    {
+      "id": "activities",
+      "type": "pie",
+      "progress": "number",
+      "faIcon": "fa-solid fa-clock",
+      "locales": {
+        "en": { "title": null }
+      }
+    },
+
+    {
+      "id": "interests",
+      "type": "list",
+      "progress": null,
+      "faIcon": "fa fa-book-open-reader",
+      "locales": {
+        "en": { "title": "Interests" },
+        "de": { "title": "Interessen" },
+        "it": { "title": "Interessi" }
+      }
+    }
+  ],
+
+  "items": {
+    "activities": [
+      {
+        "imageIconUrl": null,
+        "faIcon": "fas fa-users",
+        "value": 23,
+        "locales": {
+          "en": { "title": "Family & Friends", "description": "Cherishing every moment spent with my wife and kids, building a treasure trove of memories." },
+          "de": { "title": "Familie & Freunde", "description": "Jeden Moment mit meiner Frau und meinen Kindern schätzen, wertvolle Erinnerungen schaffen." },
+          "it": { "title": "Famiglia & Amici", "description": "Prezioso ogni momento trascorso con mia moglie e i miei figli, creando un tesoro di ricordi." }
+        }
+      },
+      {
+        "imageIconUrl": null,
+        "faIcon": "fas fa-tasks",
+        "value": 26,
+        "locales": {
+          "en": { "title": "My Projects", "description": "Dreaming up ideas and nurturing them into reality, especially in the realm of education and technology." },
+          "de": { "title": "Meine Projekte", "description": "Ideen entwickeln und sie, besonders im Bereich Bildung und Technologie, zur Realität werden lassen." },
+          "it": { "title": "I Miei Progetti", "description": "Concepire idee e coltivarle fino a renderle realtà, specialmente nel campo dell'educazione e della tecnologia." }
+        }
+      },
+      {
+        "imageIconUrl": null,
+        "faIcon": "fas fa-couch",
+        "value": 11,
+        "locales": {
+          "en": { "title": "Relaxing", "description": "Finding peace in the quiet moments, allowing myself to unwind and recharge." },
+          "de": { "title": "Entspannen", "description": "In ruhigen Momenten Frieden finden, mich entspannen und neue Energie tanken." },
+          "it": { "title": "Rilassamento", "description": "Trovare la pace nei momenti di tranquillità, permettendomi di rilassarmi e ricaricarmi." }
+        }
+      },
+      {
+        "imageIconUrl": null,
+        "faIcon": "fas fa-book",
+        "value": 16,
+        "locales": {
+          "en": { "title": "Studying", "description": "Constantly expanding my knowledge, embracing the never-ending journey of learning." },
+          "de": { "title": "Studieren", "description": "Mein Wissen stetig erweitern, die niemals endende Reise des Lernens annehmen." },
+          "it": { "title": "Studio", "description": "Espandere costantemente la mia conoscenza, abbracciando il viaggio infinito dell'apprendimento." }
+        }
+      },
+      {
+        "imageIconUrl": null,
+        "faIcon": "fas fa-dumbbell",
+        "value": 10,
+        "locales": {
+          "en": { "title": "Exercise", "description": "Staying active through various forms of exercise, including archery and more." },
+          "de": { "title": "Sport", "description": "Aktiv bleiben durch verschiedene Formen von Übungen, einschließlich Bogenschießen und mehr." },
+          "it": { "title": "Esercizio", "description": "Rimanere attivo attraverso varie forme di esercizio, inclusi il tiro con l'arco e altro." }
+        }
+      },
+      {
+        "imageIconUrl": null,
+        "faIcon": "fas fa-map-marker-alt",
+        "value": 4,
+        "locales": {
+          "en": { "title": "Traveling", "description": "Exploring the world with my family, seeking new adventures in different cultures and lands." },
+          "de": { "title": "Reisen", "description": "Mit meiner Familie die Welt erkunden, neue Abenteuer in verschiedenen Kulturen und Ländern suchen." },
+          "it": { "title": "Viaggiare", "description": "Esplorare il mondo con la mia famiglia, cercando nuove avventure in culture e terre diverse." }
+        }
+      },
+      {
+        "imageIconUrl": null,
+        "faIcon": "fas fa-bullseye",
+        "value": 10,
+        "locales": {
+          "en": { "title": "Shooting Sports", "description": "Engaging in precision sports such as handgun shooting and archery, focusing on skill and discipline." },
+          "de": { "title": "Schießsport", "description": "Beteiligung an Präzisionssportarten wie Pistolenschießen und Bogenschießen, mit Fokus auf Fähigkeit und Disziplin." },
+          "it": { "title": "Sport di Tiro", "description": "Partecipazione a sport di precisione come il tiro con la pistola e il tiro con l'arco, concentrandosi su abilità e disciplina." }
+        }
+      }
+    ],
+
+    "interests": [
+      {
+        "imageIconUrl": null,
+        "faIcon": "fas fa-code",
+        "value": null,
+        "locales": {
+          "en": { "title": "Open Source Development", "description": "A fanatical open sourcerer, contributing to and fostering the community-driven software ethos." },
+          "de": { "title": "Open-Source-Entwicklung", "description": "Ein fanatischer Open-Sourcerer, der zur Gemeinschaftssoftware beiträgt und diese fördert." },
+          "it": { "title": "Sviluppo Open Source", "description": "Un appassionato sostenitore dell'open source, contribuisce e promuove l'etica del software gestito dalla comunità." }
+        }
+      },
+      {
+        "imageIconUrl": null,
+        "faIcon": "fas fa-chalkboard-teacher",
+        "value": null,
+        "locales": {
+          "en": { "title": "Education", "description": "Passionate about the realm of education, always seeking to both learn and teach." },
+          "de": { "title": "Bildung", "description": "Leidenschaftlich im Bereich Bildung, stets bestrebt zu lernen und zu lehren." },
+          "it": { "title": "Educazione", "description": "Appassionato del mondo dell'educazione, sempre alla ricerca di imparare e insegnare." }
+        }
+      },
+      {
+        "imageIconUrl": null,
+        "faIcon": "fas fa-user-shield",
+        "value": null,
+        "locales": {
+          "en": { "title": "Cybersecurity", "description": "A dedicated white hat hacker, ensuring the safety and integrity of technology systems." },
+          "de": { "title": "Cybersicherheit", "description": "Ein engagierter White-Hat-Hacker, der die Sicherheit und Integrität von Technologiesystemen gewährleistet." },
+          "it": { "title": "Cybersecurity", "description": "Un hacker etico dedicato, che garantisce la sicurezza e l'integrità dei sistemi tecnologici." }
+        }
+      },
+      {
+        "imageIconUrl": null,
+        "faIcon": "fas fa-globe-europe",
+        "value": null,
+        "locales": {
+          "en": { "title": "Traveling", "description": "Enjoys traveling with family, experiencing new cultures and creating memories." },
+          "de": { "title": "Reisen", "description": "Reist gerne mit der Familie, erlebt neue Kulturen und schafft Erinnerungen." },
+          "it": { "title": "Viaggiare", "description": "Ama viaggiare con la famiglia, sperimentare nuove culture e creare ricordi." }
+        }
+      },
+      {
+        "imageIconUrl": null,
+        "faIcon": "fas fa-bullseye",
+        "value": null,
+        "locales": {
+          "en": { "title": "Shooting Sports", "description": "Engages in shooting sports, practicing precision and focus with handguns and archery." },
+          "de": { "title": "Schießsport", "description": "Betätigt sich im Schießsport, übt Präzision und Konzentration mit Handfeuerwaffen und Bogenschießen." },
+          "it": { "title": "Sport di Tiro", "description": "Si dedica agli sport di tiro, praticando precisione e concentrazione con pistole e tiro con l'arco." }
+        }
+      }
+    ]
+
+  }
+}

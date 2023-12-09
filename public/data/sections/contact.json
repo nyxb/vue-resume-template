@@ -1,0 +1,31 @@
+{
+  "locales": {
+    "en": {
+      "title": "<span class='text-primary'>Contact</span> Me",
+      "description": "Please don't hesitate to get in touch with me whenever you feel the need!",
+      "subtitle": "Or...",
+      "subtitleDescription": "If you prefer, you can reach out to me through the following options:"
+    },
+    "de": {
+      "title": "<span class='text-primary'>Kontaktiere mich</span>",
+      "description": "Zögern Sie nicht, mich zu kontaktieren, wann immer Sie möchten!",
+      "subtitle": "Oder...",
+      "subtitleDescription": "Wenn Sie bevorzugen, können Sie mich über die folgenden Optionen erreichen:"
+    },
+    "it": {
+      "title": "<span class='text-primary'>Contattami</span>",
+      "description": "Non esitare a metterti in contatto con me ogni volta che ne senti il bisogno!",
+      "subtitle": "O...",
+      "subtitleDescription": "Se preferisci, puoi raggiungermi attraverso le seguenti opzioni:"
+    }
+  },
+
+  "items": [
+    "@link{profile.contact.address}",
+    "@link{profile.contact.phone}",
+    "@link{profile.contact.email}",
+    "@link{profile.contact.linkedin}",
+    "@link{profile.contact.x-twitter}",
+    "@link{profile.contact.instagram}"
+  ]
+}

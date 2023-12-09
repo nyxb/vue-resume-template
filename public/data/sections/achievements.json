@@ -1,0 +1,146 @@
+{
+  "locales": {
+    "en": {
+      "title": "Career <span class='text-primary'>Achievements</span>",
+      "description": "My journey has been defined by a deep passion for open-source projects, education, and ethical hacking"
+    },
+    "de": {
+      "title": "Berufliche <span class='text-primary'>Erfolge</span>",
+      "description": "Meine berufliche Laufbahn ist geprägt von meiner Leidenschaft für Open-Source-Projekte, Bildung und ethisches Hacking"
+    },
+    "it": {
+      "title": "Realizzazioni <span class='text-primary'>Professionali</span>",
+      "description": "Il mio percorso professionale è stato definito da una profonda passione per i progetti open-source, l'educazione e l'hacking etico. Ecco alcuni dei miei principali successi e riconoscimenti"
+    }
+  },
+
+  "subcategories": [
+    {
+      "id": "digital_contributions",
+      "faIcon": "fa-solid fa-broadcast-tower",
+      "locales": {
+        "en": { "title": "Digital Contributions", "buttonLabel": "Explore" },
+        "de": { "title": "Digitale Beiträge", "buttonLabel": "Entdecken" },
+        "it": { "title": "Contributi Digitali", "buttonLabel": "Esplora" }
+      }
+    },
+
+    {
+      "id": "certifications",
+      "faIcon": "fa-solid fa-award",
+      "locales": {
+        "en": { "title": "Certifications", "buttonLabel": "View Certification" },
+        "de": { "title": "Zertifizierungen", "buttonLabel": "Zertifikat anzeigen" },
+        "it": { "title": "Certificazioni", "buttonLabel": "Mostra la Certificazione" }
+      }
+    }
+  ],
+
+  "items": {
+    "digital_contributions": [
+      {
+        "id": "article_mention",
+        "place": "@link{places.around}",
+        "date": "2023/12",
+        "href": "https://nyxb.nexus/posts/github-einsteiger-2023",
+        "locales": {
+          "en": {
+            "title": "Webinar: Introduction to GitHub",
+            "description": "I conducted a practical introduction to the fundamentals of GitHub. During the webinar, I shared tips and tricks for effective GitHub usage and hosted a Q&A session to address participants' questions."
+          },
+          "de": {
+            "title": "Webinar: Einführung in GitHub",
+            "description": "Ich führte eine praxisorientierte Einführung in die Grundlagen von GitHub durch. Während des Webinars teilte ich Tipps und Tricks für eine effektive Nutzung von GitHub und leitete eine Fragerunde, um Fragen der Teilnehmer zu beantworten."
+          },
+          "it": {
+            "title": "Webinar: Introduzione a GitHub",
+            "description": "Ho condotto una introduzione pratica ai fondamenti di GitHub. Durante il webinar, ho condiviso consigli e trucchi per un uso efficace di GitHub e ho ospitato una sessione di domande e risposte per affrontare le domande dei partecipanti."
+          }
+        }
+      }
+    ],
+
+    "certifications": [
+      {
+        "id": "red_hat_engineer",
+        "place": "@link{places.redhat}",
+        "date": "2016/11",
+        "href": "https://www.redhat.com/training/certification/verify",
+        "locales": {
+          "en": {
+            "title": "Red Hat Certified Engineer",
+            "description": "Certified as a Red Hat Certified Engineer on Red Hat Enterprise Linux 6; a recognition of advanced system administration skills."
+          },
+          "de": {
+            "title": "Red Hat Zertifizierter Ingenieur",
+            "description": "Als Red Hat Zertifizierter Ingenieur auf Red Hat Enterprise Linux 6 zertifiziert; eine Anerkennung fortgeschrittener Systemverwaltungsfähigkeiten."
+          },
+          "it": {
+            "title": "Ingegnere Certificato Red Hat",
+            "description": "Certificato come Ingegnere Certificato Red Hat su Red Hat Enterprise Linux 6; riconoscimento di competenze avanzate nell'amministrazione di sistemi."
+          }
+        }
+      },
+      {
+        "id": "open_group_it_specialist",
+        "place": "@link{places.open-group}",
+        "date": "2012/12",
+        "href": "http://www.opengroup.org/openiccs/register.html",
+        "locales": {
+          "en": {
+            "title": "Open Certified IT Specialist",
+            "description": "Successfully met the requirements of The Open Group Certified IT Specialist Certification program and has been awarded the title of Certified IT Specialist."
+          },
+          "de": {
+            "title": "Open Zertifizierter IT-Spezialist",
+            "description": "Erfolgreiche Erfüllung der Anforderungen des Zertifizierungsprogramms der Open Group für IT-Spezialisten und damit Ernennung zum Zertifizierten IT-Spezialisten."
+          },
+          "it": {
+            "title": "Specialista IT Certificato Open",
+            "description": "Incontrato con successo i requisiti del programma di certificazione per Specialista IT Certificato di The Open Group ed è stato assegnato il titolo di Specialista IT Certificato."
+          }
+        }
+      },
+      {
+        "id": "certified_scrum_master",
+        "place": "@link{places.scrum}",
+        "date": "2017/02",
+        "href": "",
+        "locales": {
+          "en": {
+            "title": "Certified ScrumMaster®",
+            "description": "Awarded the designation Certified ScrumMaster® for completing the prescribed requirements for this certification and is hereby entitled to all privileges and benefits offered by SCRUM ALLIANCE®."
+          },
+          "de": {
+            "title": "Zertifizierter ScrumMaster®",
+            "description": "Mit der Bezeichnung Certified ScrumMaster® ausgezeichnet für die Erfüllung der vorgeschriebenen Anforderungen für diese Zertifizierung und somit Berechtigung zu allen Privilegien und Vorteilen, die von der SCRUM ALLIANCE® angeboten werden."
+          },
+          "it": {
+            "title": "ScrumMaster® Certificato",
+            "description": "Assegnata la designazione di ScrumMaster® Certificato per aver completato i requisiti prescritti per questa certificazione ed è pertanto titolare di tutti i privilegi e benefici offerti da SCRUM ALLIANCE®."
+          }
+        }
+      },
+      {
+        "id": "cisco_certified_network_associate",
+        "place": "@link{places.redhat}",
+        "date": "2023/12",
+        "href": "https://www.cisco.com/go/verifycertificate",
+        "locales": {
+          "en": {
+            "title": "Cisco Certified Network Associate",
+            "description": "Has successfully completed the Cisco Certification requirements and is recognized as a Cisco Certified Network Associate."
+          },
+          "de": {
+            "title": "Cisco Zertifizierter Netzwerkassistent",
+            "description": "Hat die Zertifizierungsanforderungen von Cisco erfolgreich abgeschlossen und wird als Cisco Zertifizierter Netzwerkassistent anerkannt."
+          },
+          "it": {
+            "title": "Associato di Rete Certificato Cisco",
+            "description": "Ha completato con successo i requisiti di certificazione Cisco ed è riconosciuto come Associato di Rete Certificato Cisco."
+          }
+        }
+      }
+    ]
+  }
+}
