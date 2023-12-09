@@ -12,7 +12,7 @@ import App from './vue/core/App.vue'
 
 const data = useData()
 
-data.fetchEssentials().then((r) => {
+data.fetchEssentials().then((_r) => {
    const language = useLanguage()
    language.init(data.getSettings().supportedLanguages)
 

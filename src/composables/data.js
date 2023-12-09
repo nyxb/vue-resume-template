@@ -1,3 +1,5 @@
+/* eslint-disable no-unused-vars */
+/* eslint-disable no-use-before-define */
 /**
  * Created by Dennis Ollhoff on 08.23.2023
  * This composable will fetch and manage the application data.
@@ -7,7 +9,7 @@ import { useUtils } from './utils.js'
 import { useLanguage } from './language.js'
 import { useConstants } from './constants.js'
 
-const constants = useConstants()
+// const constants = useConstants()
 const language = useLanguage()
 const utils = useUtils()
 
@@ -51,9 +53,9 @@ export function useData() {
     * @return {Promise<void>}
     */
    const fetchEssentials = async () => {
-      const jSections = await _loadJson(`${constants.BASE_PATH}/data/sections.json`)
-      const jSettings = await _loadJson(`${constants.BASE_PATH}/data/settings.json`)
-      const jStrings = await _loadJson(`${constants.BASE_PATH}/data/strings.json`)
+      const jSections = await _loadJson(`/data/sections.json`)
+      const jSettings = await _loadJson(`/data/settings.json`)
+      const jStrings = await _loadJson(`/data/strings.json`)
 
       _jsonData.sections = jSections.sections
       _jsonData.categories = jSections.categories
@@ -68,8 +70,8 @@ export function useData() {
     * @return {Promise<void>}
     */
    const fetchAll = async () => {
-      const jPlaces = await _loadJson(`${constants.BASE_PATH}/data/info/places.json`)
-      const jProfile = await _loadJson(`${constants.BASE_PATH}/data/info/profile.json`)
+      const jPlaces = await _loadJson(`/data/info/places.json`)
+      const jProfile = await _loadJson(`/data/info/profile.json`)
 
       _jsonData.places = jPlaces
       _jsonData.profile = jProfile
