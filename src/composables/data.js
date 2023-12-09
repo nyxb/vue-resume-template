@@ -7,9 +7,7 @@
 import { reactive } from 'vue'
 import { useUtils } from './utils.js'
 import { useLanguage } from './language.js'
-import { useConstants } from './constants.js'
 
-// const constants = useConstants()
 const language = useLanguage()
 const utils = useUtils()
 
@@ -53,9 +51,9 @@ export function useData() {
     * @return {Promise<void>}
     */
    const fetchEssentials = async () => {
-      const jSections = await _loadJson(`/data/sections.json`)
-      const jSettings = await _loadJson(`/data/settings.json`)
-      const jStrings = await _loadJson(`/data/strings.json`)
+      const jSections = await _loadJson('/data/sections.json')
+      const jSettings = await _loadJson('/data/settings.json')
+      const jStrings = await _loadJson('/data/strings.json')
 
       _jsonData.sections = jSections.sections
       _jsonData.categories = jSections.categories

@@ -1,56 +1,9 @@
-<template>
-    <form id="contact-form">
-        <div class="row contact-form-row align-items-stretch">
-            <!-- Feedback Alert -->
-            <div class="col-12 mb-1" v-if="alertStatus">
-                <Alert :type="alertStatus.type" :message="alertStatus.message"/>
-            </div>
-
-            <!-- Left Column -->
-            <div class="col-xl-6">
-                <!-- Name Input -->
-                <div class="form-group input-group">
-                    <span class="input-group-text input-group-attach"><i class="fa fa-signature"/></span>
-                    <input class="form-control" id="form-name" type="text" :placeholder="data.getString('name') + ' *'" required/>
-                </div>
-
-                <!-- E-mail Address Input -->
-                <div class="form-group input-group">
-                    <span class="input-group-text input-group-attach"><i class="fa fa-envelope"/></span>
-                    <input class="form-control" id="form-email" type="email" :placeholder="data.getString('email') + ' *'" required/>
-                </div>
-
-                <!-- Subject Input -->
-                <div class="form-group input-group">
-                    <span class="input-group-text input-group-attach"><i class="fa fa-pen-to-square"/></span>
-                    <input class="form-control" id="form-subject" type="text" :placeholder="data.getString('subject') + ' *'" required/>
-                </div>
-            </div>
-
-            <!-- Right Column -->
-            <div class="col-xl-6">
-                <!-- Message TextArea -->
-                <div class="form-group form-group-textarea mb-md-0">
-                    <textarea class="form-control" id="form-message" :placeholder="data.getString('message')" required/>
-                </div>
-            </div>
-
-            <!-- Bottom Column -->
-            <div class="col-12 text-center mt-3 mt-lg-4">
-                <button class="btn btn-primary btn-xl" type="submit" id="btn-submit-message" :class="{disabled: submitStatus === SubmitStatus.SENDING}">
-                    <i class="fa fa-envelope me-1"/> {{ data.getString('sendMessage') }}
-                </button>
-            </div>
-        </div>
-    </form>
-</template>
-
 <script setup>
-import {useData} from "../../../composables/data.js"
-import {useLayout} from "../../../composables/layout.js"
-import {computed, onMounted, ref} from "vue"
-import {useNavigation} from "../../../composables/navigation.js"
-import Alert from "../../widgets/Alert.vue"
+import { computed, onMounted, ref } from 'vue'
+import { useData } from '../../../composables/data.js'
+import { useLayout } from '../../../composables/layout.js'
+import { useNavigation } from '../../../composables/navigation.js'
+import Alert from '../../widgets/Alert.vue'
 
 const data = useData()
 const layout = useLayout()
@@ -60,10 +13,10 @@ const navigation = useNavigation()
  * @enum
  */
 const SubmitStatus = {
-    ENABLED: "enabled",
-    SENDING: "sending",
-    SENT: "sent",
-    ERROR: "error"
+   ENABLED: 'enabled',
+   SENDING: 'sending',
+   SENT: 'sent',
+   ERROR: 'error',
 }
 
 /**
@@ -86,24 +39,23 @@ let submitAttempts = 0
  * @private
  */
 onMounted(() => {
-    const form = document.getElementById('contact-form')
-    if (form.attachEvent) {
-        form.attachEvent("submit", _onSubmit)
-    } else {
-        form.addEventListener("submit", _onSubmit)
-    }
+   const form = document.getElementById('contact-form')
+   if (form.attachEvent)
+      form.attachEvent('submit', _onSubmit)
+   else
+      form.addEventListener('submit', _onSubmit)
 
-    submitStatus.value = SubmitStatus.ENABLED
+   submitStatus.value = SubmitStatus.ENABLED
 })
 
 /**
  * @private
  */
-const _clearAllFields = () => {
-    FORM_FIELDS.forEach(field => {
-        const elField = document.getElementById(`form-${field}`)
-        elField.value = ''
-    })
+function _clearAllFields() {
+   FORM_FIELDS.forEach((field) => {
+      const elField = document.getElementById(`form-${field}`)
+      elField.value = ''
+   })
 }
 
 /**
@@ -111,82 +63,126 @@ const _clearAllFields = () => {
  * @return {boolean}
  * @private
  */
-const _onSubmit = (e) => {
-    if (e.preventDefault) {
-        e.preventDefault()
-    }
+function _onSubmit(e) {
+   if (e.preventDefault)
+      e.preventDefault()
 
-    const values = {}
+   const values = {}
 
-    FORM_FIELDS.forEach(field => {
-        const elField = document.getElementById(`form-${field}`)
-        values[field] = elField.value
-    })
+   FORM_FIELDS.forEach((field) => {
+      const elField = document.getElementById(`form-${field}`)
+      values[field] = elField.value
+   })
 
-    submitStatus.value = SubmitStatus.SENDING
+   submitStatus.value = SubmitStatus.SENDING
 
-    _sendMessage()
-    return false
+   _sendMessage()
+   return false
 }
 
 /**
  * @private
  */
-const _sendMessage = () => {
-    const feedbackView = layout.getFeedbackView()
-    feedbackView.showActivitySpinner(data.getString("sendingMessage") + "...")
-    submitAttempts++
+function _sendMessage() {
+   const feedbackView = layout.getFeedbackView()
+   feedbackView.showActivitySpinner(`${data.getString('sendingMessage')}...`)
+   submitAttempts++
 
-    /** The message sending logic goes here... **/
-    setTimeout(() => {
-        if(submitAttempts % 2 !== 0) {
-            _onMessageSent()
-        }
-        else {
-            _onMessageError()
-        }
-    }, 1000)
-    /** ************************************** **/
+   /** The message sending logic goes here... */
+   setTimeout(() => {
+      if (submitAttempts % 2 !== 0)
+         _onMessageSent()
+
+      else
+         _onMessageError()
+   }, 1000)
+   /** */
 }
 
 /**
  * @private
  */
-const _onMessageSent = () => {
-    const feedbackView = layout.getFeedbackView()
-    feedbackView.hideActivitySpinner()
+function _onMessageSent() {
+   const feedbackView = layout.getFeedbackView()
+   feedbackView.hideActivitySpinner()
 
-    _clearAllFields()
-    submitStatus.value = SubmitStatus.SENT
-    if(navigation.isOneAtOnceMode()) {
-        layout.instantScrollTo(0, false)
-    }
+   _clearAllFields()
+   submitStatus.value = SubmitStatus.SENT
+   if (navigation.isOneAtOnceMode())
+      layout.instantScrollTo(0, false)
 }
 
 /**
  * @private
  */
-const _onMessageError = () => {
-    const feedbackView = layout.getFeedbackView()
-    feedbackView.hideActivitySpinner()
-    submitStatus.value = SubmitStatus.ERROR
+function _onMessageError() {
+   const feedbackView = layout.getFeedbackView()
+   feedbackView.hideActivitySpinner()
+   submitStatus.value = SubmitStatus.ERROR
 }
 
 /**
- * @return {{type: string, message: String}|null}
+ * @return {{type: string, message: string} | null}
  * @private
  */
 const alertStatus = computed(() => {
-    switch (submitStatus.value) {
-        case SubmitStatus.SENT:
-            return {type: 'success', message: data.getString('messageSent')}
-        case SubmitStatus.ERROR:
-            return {type: 'danger', message: data.getString('messageError')}
-        default:
-            return null
-    }
+   switch (submitStatus.value) {
+      case SubmitStatus.SENT:
+         return { type: 'success', message: data.getString('messageSent') }
+      case SubmitStatus.ERROR:
+         return { type: 'danger', message: data.getString('messageError') }
+      default:
+         return null
+   }
 })
 </script>
+
+<template>
+   <form id="contact-form">
+      <div class="row contact-form-row align-items-stretch">
+         <!-- Feedback Alert -->
+         <div v-if="alertStatus" class="col-12 mb-1">
+            <Alert :type="alertStatus.type" :message="alertStatus.message" />
+         </div>
+
+         <!-- Left Column -->
+         <div class="col-xl-6">
+            <!-- Name Input -->
+            <div class="form-group input-group">
+               <span class="input-group-text input-group-attach"><i class="fa fa-signature" /></span>
+               <input id="form-name" class="form-control" type="text" :placeholder="`${data.getString('name')} *`" required>
+            </div>
+
+            <!-- E-mail Address Input -->
+            <div class="form-group input-group">
+               <span class="input-group-text input-group-attach"><i class="fa fa-envelope" /></span>
+               <input id="form-email" class="form-control" type="email" :placeholder="`${data.getString('email')} *`" required>
+            </div>
+
+            <!-- Subject Input -->
+            <div class="form-group input-group">
+               <span class="input-group-text input-group-attach"><i class="fa fa-pen-to-square" /></span>
+               <input id="form-subject" class="form-control" type="text" :placeholder="`${data.getString('subject')} *`" required>
+            </div>
+         </div>
+
+         <!-- Right Column -->
+         <div class="col-xl-6">
+            <!-- Message TextArea -->
+            <div class="form-group form-group-textarea mb-md-0">
+               <textarea id="form-message" class="form-control" :placeholder="data.getString('message')" required />
+            </div>
+         </div>
+
+         <!-- Bottom Column -->
+         <div class="col-12 text-center mt-3 mt-lg-4">
+            <button id="btn-submit-message" class="btn btn-primary btn-xl" type="submit" :class="{ disabled: submitStatus === SubmitStatus.SENDING }">
+               <i class="fa fa-envelope me-1" /> {{ data.getString('sendMessage') }}
+            </button>
+         </div>
+      </div>
+   </form>
+</template>
 
 <style lang="scss" scoped>
 @import "/src/scss/_theming.scss";

@@ -4,9 +4,6 @@
  */
 export function useConstants() {
    /** @const **/
-   const BASE_PATH = import.meta.env.BASE_URL
-
-   /** @const **/
    const BOOTSTRAP_BREAKPOINTS = {
       xs: 0,
       sm: 576,
@@ -58,5 +55,5 @@ export function useConstants() {
       ERROR: 'error',
    }
 
-   return { BASE_PATH, HTML_CLASSES, BOOTSTRAP_BREAKPOINTS, LOCAL_STORAGE_ITEMS, NAVIGATION_SIDEBAR_BREAKPOINT, RANDOM_COLOR_ARRAY, LoadStatus }
+   return { HTML_CLASSES, BOOTSTRAP_BREAKPOINTS, LOCAL_STORAGE_ITEMS, NAVIGATION_SIDEBAR_BREAKPOINT, RANDOM_COLOR_ARRAY, LoadStatus }
 }
