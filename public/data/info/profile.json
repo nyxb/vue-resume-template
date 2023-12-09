@@ -5,15 +5,15 @@
   "locales": {
     "en": {
       "credits": "Designed by <strong><a class='light' href='https://github.com/nyxb'>Dennis Ollhoff</a></strong>",
-      "role": "Developer"
+      "role": "Open Sourcerer, Educator, Indie Hacker, White Hat Hacker"
     },
     "de": {
       "credits": "Erstellt von <strong><a class='light' href='https://github.com/nyxb'>Dennis Ollhoff</a></strong>",
-      "role": "Developer"
+      "role": "Open Sourcerer, Pädagoge, Indie Hacker, White Hat Hacker"
     },
     "it": {
       "credits": "Progettato da <strong><a class='light' href='https://github.com/nyxb'>Dennis Ollhoff</a></strong>",
-      "role": "Sviluppatore"
+      "role": "Open Sourcerer, Educatore, Indie Hacker, White Hat Hacker"
     }
   },
 
