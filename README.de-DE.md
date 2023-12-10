@@ -1,10 +1,14 @@
-# Vue-Lebenslauf-Vorlage von Dennis Ollhoff
+<h1 align='center'>
+Vue-Lebenslauf-Vorlage
+</h1>
 
 <p align='center'>
 <a href="https://github.com/nyxb/vue-resume-template/blob/main/README.md">Englisch</a> | <b>German</b>
 </p>
 
+<p align='center'>
 Dieses Theme bietet ein einfaches und sauberes Design, das speziell für die Erstellung benutzerfreundlicher Website-Lebensläufe oder CV-Landingpages maßgeschneidert ist. Es ist mit Vue 3.0 (Composition API) und Bootstrap 5 gebaut und bietet ein zusammenhängendes Einseiten-Layout, das Funktionalität und Ästhetik verbindet.
+</p>
 
 Schlüsselmerkmale:
 - Eine verankerte feste Seiten-Navigationsleiste für sanftes Scrollen durch die Seite.
@@ -226,6 +230,24 @@ kompliziert. Hier ist eine schrittweise Anleitung für Anfänger:
 
 7. **Eigene Domains:**
    - Du kannst auch eine eigene Domain für deine Seite über den 'Domain management'-Bereich von Netlify einrichten.
+
+## Eigene Domain einrichten
+
+Nachdem du deine Vue.js-Anwendung auf Netlify bereitgestellt hast, kannst du überlegen, eine eigene Domain für deine Seite einzurichten, anstatt die Standard-URL von Netlify zu verwenden. Eine eigene Domain kann deiner Website ein professionelleres Aussehen verleihen und ist oft leichter zu merken.
+
+### Domain-Kauf bei Namecheap
+
+- Eine Option für den Kauf einer Domain ist [Namecheap](https://www.namecheap.com/), ein beliebter Domain-Registrar.
+- Bei Namecheap kannst du Domains oft schon für so wenig wie 1,54€ erwerben, was es zu einer kostengünstigen Option macht, insbesondere für Einsteiger oder wenn du ein begrenztes Budget hast.
+- Nach dem Kauf deiner Domain kannst du die DNS-Einstellungen so konfigurieren, dass sie auf deine Netlify-Website zeigen. Netlify bietet eine detaillierte Anleitung, wie du deine benutzerdefinierte Domain einrichtest.
+
+### Vorteile einer eigenen Domain
+
+- Eine eigene Domain erhöht die Glaubwürdigkeit und Professionalität deiner Website.
+- Sie bietet auch eine höhere Flexibilität und Kontrolle über deine Online-Präsenz.
+- Eine benutzerdefinierte Domain kann auch SEO-Vorteile bieten und die Auffindbarkeit deiner Website verbessern.
+
+Indem du eine eigene Domain einrichtest, gibst du deiner Website eine persönliche Note und verbesserst ihre Sichtbarkeit im Internet.
 
 ## Über
 

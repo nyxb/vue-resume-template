@@ -1,11 +1,15 @@
-# [Vue Resume Template](https://ryanbalieiro.github.io/vue-resume-template/) by Dennis Ollhoff
+<h1 align='center'>
+ Vue Resume Template
+</h1>
 
 <p align='center'>
 <b>English</b> | <a href="https://github.com/nyxb/vue-resume-template/blob/main/README.de-DE.md">German</a>
 <!-- Contributors: Thanks for getting interested, however we DON'T accept new translations to the README, thanks. -->
 </p>
 
+<p align='center'>
 This theme offers a simple and clean design tailored for creating user-friendly website resumes or CV landing pages. It's built using Vue 3.0 (Composition API) and Bootstrap 5, presenting a cohesive one-page layout that blends functionality and aesthetics.
+</p>
 
 Key features:
 - An anchored fixed side navigation bar for smooth scrolling through the page.
@@ -223,6 +227,25 @@ Certainly! If you're new to web development or deploying sites online, Netlify m
 
 7. **Custom Domains:**
    - You can also set up a custom domain for your site through Netlify’s 'Domain management' section.
+
+
+## Setting Up a Custom Domain
+
+After deploying your Vue.js application on Netlify, you might consider setting up a custom domain for your site instead of using the default Netlify URL. A custom domain can give your website a more professional appearance and is often easier to remember.
+
+### Purchasing a Domain from Namecheap
+
+- One option for purchasing a domain is [Namecheap](https://www.namecheap.com/), a popular domain registrar.
+- At Namecheap, you can often find domains for as low as $1.66 (approximately 1.58€), making it an affordable option, especially for beginners or if you are on a tight budget.
+- After purchasing your domain, you can configure the DNS settings to point to your Netlify website. Netlify provides detailed guidance on how to set up your custom domain.
+
+### Benefits of Owning a Custom Domain
+
+- A custom domain enhances the credibility and professionalism of your website.
+- It also provides greater flexibility and control over your online presence.
+- A custom domain can also offer SEO benefits, improving the discoverability of your site.
+
+By setting up a custom domain, you give your website a personal touch and improve its visibility on the internet.
 
 ## About
 

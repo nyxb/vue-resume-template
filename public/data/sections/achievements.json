@@ -65,7 +65,7 @@
         "id": "red_hat_engineer",
         "place": "@link{places.redhat}",
         "date": "2016/11",
-        "href": "https://www.redhat.com/training/certification/verify",
+        "href": "https:/dennis-ollhoff.space/certifications/redhat.pdf",
         "locales": {
           "en": {
             "title": "Red Hat Certified Engineer",
@@ -85,7 +85,7 @@
         "id": "open_group_it_specialist",
         "place": "@link{places.open-group}",
         "date": "2012/12",
-        "href": "http://www.opengroup.org/openiccs/register.html",
+        "href": "https:/dennis-ollhoff.space/certifications/opengroup.pdf",
         "locales": {
           "en": {
             "title": "Open Certified IT Specialist",
@@ -105,7 +105,7 @@
         "id": "certified_scrum_master",
         "place": "@link{places.scrum}",
         "date": "2017/02",
-        "href": "",
+        "href": "https:/dennis-ollhoff.space/certifications/csm.pdf",
         "locales": {
           "en": {
             "title": "Certified ScrumMaster®",
@@ -125,7 +125,7 @@
         "id": "cisco_certified_network_associate",
         "place": "@link{places.redhat}",
         "date": "2023/12",
-        "href": "https://www.cisco.com/go/verifycertificate",
+        "href": "https:/dennis-ollhoff.space/certifications/ccna.pdf",
         "locales": {
           "en": {
             "title": "Cisco Certified Network Associate",
