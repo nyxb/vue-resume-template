@@ -4,10 +4,26 @@ import LanguagePicker from '../../widgets/LanguagePicker.vue'
 import NavProfileCard from '../partials/NavProfileCard.vue'
 import { useData } from '../../../composables/data.js'
 import { useNavigation } from '../../../composables/navigation.js'
+import { useLanguage } from '../../../composables/language.js'
 
 const emit = defineEmits(['linkClicked'])
 const data = useData()
 const navigation = useNavigation()
+const { getSelectedLanguage } = useLanguage()
+
+function downloadCV() {
+   const language = getSelectedLanguage()
+   if (!language)
+      return
+
+   const cvFileName = `CV-${language.id.toUpperCase()}.pdf`
+   const link = document.createElement('a')
+   link.href = `/cv/${cvFileName}`
+   link.download = cvFileName
+   document.body.appendChild(link)
+   link.click()
+   document.body.removeChild(link)
+}
 
 /**
  * @type {ComputedRef<object>}
@@ -61,7 +77,7 @@ function _onLinkClicked(section) {
          <LanguagePicker />
 
          <!-- Download Button -->
-         <button class="nav-download-pdf text-2 mt-4" @click="onDownloadClick">
+         <button class="nav-download-pdf text-2 mt-4" @click="downloadCV">
             <i class="fa fa-download" /> Download PDF
          </button>
 
@@ -155,5 +171,21 @@ li.nav-item {
         font-family: $custom-subheadings-font-family;
         color: $light-4;
     }
+
+    .nav-download-pdf {
+    border: 0;
+    background: none;
+    font-family: $custom-subheadings-font-family;
+    color: $light-4;
+    cursor: pointer;
+    padding: 0.5rem 0;
+
+    &:hover {
+        color: #14F195;
+        i {
+            color: #14F195;
+        }
+    }
+   }
 }
 </style>
