@@ -1,24 +1,29 @@
-<template>
-    <div class="social-links">
-        <!-- Social Button -->
-        <a v-for="item in props.items" class="btn btn-social" target="_blank"
-           :href="item['href']"
-           :aria-label="item['faIcon']">
-
-            <!-- Social Button Icon -->
-            <i :class="item['faIcon']"/>
-        </a>
-    </div>
-</template>
-
 <script setup>
 /**
- * @property {{href:String, faIcon:String}[]} items
+ * @property {{href: string, faIcon: string}[]} items
  */
+import { usePdfModeStore } from '../../stores/pdfModeStore'
+
 const props = defineProps({
-    items: Array
+   items: Array,
 })
+const pdfModeStore = usePdfModeStore()
 </script>
+
+<template>
+   <div v-if="!pdfModeStore.isPdfMode" class="social-links">
+      <!-- Social Button -->
+      <a
+         v-for="item in props.items" class="btn btn-social" target="_blank"
+         :href="item.href"
+         :aria-label="item.faIcon"
+      >
+
+         <!-- Social Button Icon -->
+         <i :class="item.faIcon" />
+      </a>
+   </div>
+</template>
 
 <style lang="scss" scoped>
 @import "/src/scss/_theming.scss";

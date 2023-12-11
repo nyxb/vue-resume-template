@@ -1,4 +1,3 @@
-/* eslint-disable no-unused-vars */
 /* eslint-disable no-use-before-define */
 /**
  * Created by Dennis Ollhoff on 08.23.2023

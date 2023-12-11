@@ -1,5 +1,5 @@
 <script setup>
-import { computed, onMounted, ref } from 'vue'
+import { computed, onMounted, provide, ref } from 'vue'
 import { useData } from '../../composables/data.js'
 import { useLayout } from '../../composables/layout.js'
 import { useUtils } from '../../composables/utils.js'
@@ -12,6 +12,8 @@ const utils = useUtils()
 const feedbackView = ref(null)
 const appDidLoad = ref(false)
 let intervalId = null
+
+provide('appDidLoad', appDidLoad)
 
 onMounted(() => {
    layout.setFeedbackView(feedbackView)

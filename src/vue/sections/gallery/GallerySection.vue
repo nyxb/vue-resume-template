@@ -3,6 +3,7 @@ import { computed, ref } from 'vue'
 import SectionTemplate from '../_templates/SectionTemplate.vue'
 import { useData } from '../../../composables/data.js'
 import FilterTabs from '../../widgets/FilterTabs.vue'
+import { usePdfModeStore } from '../../../stores/pdfModeStore'
 import GalleryGrid from './GalleryGrid.vue'
 import GalleryModal from './GalleryModal.vue'
 
@@ -14,6 +15,7 @@ const props = defineProps({
 })
 
 const data = useData()
+const pdfModeStore = usePdfModeStore()
 
 const selectedCategoryId = ref(null)
 const selectedProject = ref(null)
@@ -90,7 +92,7 @@ function _onProjectOpened(project) {
    <SectionTemplate :section-data="props.sectionData">
       <div class="gallery-section-row row g-0">
          <!-- Filter -->
-         <div class="col-12">
+         <div v-if="!pdfModeStore.isPdfMode" class="col-12">
             <FilterTabs :items="tabItems" @selected="_onFilterTabSelected" />
          </div>
 

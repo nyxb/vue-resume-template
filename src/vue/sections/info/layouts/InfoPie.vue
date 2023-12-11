@@ -1,59 +1,38 @@
-<template>
-    <div class="row gx-0 mb-1 mb-md-3 mb-xl-4">
-        <!-- Chart Column -->
-        <div class="col-12 col-xl-5 col-xxl-4 d-flex">
-            <div class="chart-wrapper">
-                <Pie class="chart" :data="chartData" :options="CHART_OPTIONS"/>
-            </div>
-        </div>
-
-        <!-- Items Column -->
-        <div class="col-12 col-xl-7 col-xxl-8 d-flex pt-3">
-            <div class="row gy-1 gy-xl-3 gx-md-5 items-wrapper">
-                <div v-for="item in props.items" class="col-12 col-sm-6 item-container">
-                    <InfoItem :item="item"
-                              :highlighted-header="false"
-                              :small-description="true"
-                              :description-with-progress-bar="false"
-                              :icon-color-style="'customColor'"/>
-                </div>
-            </div>
-        </div>
-    </div>
-</template>
-
 <script setup>
-import InfoItem from "../partials/InfoItem.vue"
 import { Pie } from 'vue-chartjs'
-import { Chart as ChartJS, ArcElement, Title, Tooltip } from 'chart.js'
-import {computed} from "vue"
+import { ArcElement, Chart as ChartJS, Title, Tooltip } from 'chart.js'
+import { computed } from 'vue'
+import InfoItem from '../partials/InfoItem.vue'
+import { usePdfModeStore } from '../../../../stores/pdfModeStore'
 
 /**
- * @property {Object[]} items
+ * @property {object[]} items
  */
 const props = defineProps({
-    items: Array,
+   items: Array,
 })
+
+const pdfModeStore = usePdfModeStore()
 
 ChartJS.register(Title, Tooltip, ArcElement)
 
 /**
  * @const
- * @type {Object}
+ * @type {object}
  */
 const CHART_OPTIONS = {
-    responsive:true,
-    maintainAspectRatio: false,
-    animation: false,
-    plugins: {
-        tooltip: {
-            callbacks: {
-                label: (tooltipItem, data) => {
-                    return " " + Math.round(tooltipItem.parsed) + "% "
-                }
-            }
-        }
-    }
+   responsive: true,
+   maintainAspectRatio: false,
+   animation: false,
+   plugins: {
+      tooltip: {
+         callbacks: {
+            label: (tooltipItem, data) => {
+               return ` ${Math.round(tooltipItem.parsed)}% `
+            },
+         },
+      },
+   },
 }
 
 /**
@@ -61,32 +40,58 @@ const CHART_OPTIONS = {
  * @private
  */
 const chartData = computed(() => {
-    const chartData = {
-        labels: [],
-        datasets: [{ data: [], backgroundColor: [] }],
-    }
+   const chartData = {
+      labels: [],
+      datasets: [{ data: [], backgroundColor: [] }],
+   }
 
-    const totalPercentage = props.items.reduce((total, item) => {
-        const title = item['locales']['title']
-        const value = item['value']
+   const totalPercentage = props.items.reduce((total, item) => {
+      const title = item.locales.title
+      const value = item.value
 
-        chartData.labels.push(title)
-        return total + value
-    }, 0)
+      chartData.labels.push(title)
+      return total + value
+   }, 0)
 
-    const dataset = chartData.datasets[0]
+   const dataset = chartData.datasets[0]
 
-    props.items.forEach((item, i) => {
-        const value = item['value']
-        const percentage = Math.round(value * 100 / totalPercentage)
+   props.items.forEach((item, i) => {
+      const value = item.value
+      const percentage = Math.round(value * 100 / totalPercentage)
 
-        dataset.data.push(percentage)
-        dataset.backgroundColor.push(item['customColor'])
-    })
+      dataset.data.push(percentage)
+      dataset.backgroundColor.push(item.customColor)
+   })
 
-    return chartData
+   return chartData
 })
 </script>
+
+<template>
+   <div class="row gx-0 mb-1 mb-md-3 mb-xl-4">
+      <!-- Chart Column -->
+      <div v-if="!pdfModeStore.isPdfMode" class="col-12 col-xl-5 col-xxl-4 d-flex">
+         <div class="chart-wrapper">
+            <Pie class="chart" :data="chartData" :options="CHART_OPTIONS" />
+         </div>
+      </div>
+
+      <!-- Items Column -->
+      <div class="col-12 col-xl-7 col-xxl-8 d-flex pt-3">
+         <div class="row gy-1 gy-xl-3 gx-md-5 items-wrapper">
+            <div v-for="item in props.items" class="col-12 col-sm-6 item-container">
+               <InfoItem
+                  :item="item"
+                  :highlighted-header="false"
+                  :small-description="true"
+                  :description-with-progress-bar="false"
+                  icon-color-style="customColor"
+               />
+            </div>
+         </div>
+      </div>
+   </div>
+</template>
 
 <style lang="scss" scoped>
 @import "/src/scss/_theming.scss";

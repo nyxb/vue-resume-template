@@ -6,6 +6,7 @@
   "packageManager": "pnpm@8.11.0",
   "scripts": {
     "dev": "vite --open",
+    "dev:pdf": "vite --open=/pdf-preview",
     "build": "vite build",
     "preview": "vite preview",
     "deploy": "cd dist && cp index.html 404.html"
@@ -15,6 +16,8 @@
     "@popperjs/core": "^2.11.7",
     "bootstrap": "^5.2.3",
     "chart.js": "^4.3.3",
+    "html2pdf.js": "^0.10.1",
+    "pinia": "^2.1.7",
     "swiper": "^10.0.4",
     "vue": "^3.3.11",
     "vue-chartjs": "^5.2.0",
@@ -24,6 +27,8 @@
     "@nyxb/eslint-config": "^2.0.0",
     "@vitejs/plugin-vue": "^4.5.2",
     "eslint": "^8.55.0",
+    "html2canvas": "^1.4.1",
+    "jspdf": "^2.5.1",
     "sass": "^1.62.1",
     "vite": "^5.0.7",
     "vite-plugin-vue-devtools": "^1.0.0-rc.7"

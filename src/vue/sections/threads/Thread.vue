@@ -3,6 +3,7 @@ import { computed } from 'vue'
 import { useUtils } from '../../../composables/utils.js'
 import { useLanguage } from '../../../composables/language.js'
 import Tags from '../../widgets/Tags.vue'
+import { usePdfModeStore } from '../../../stores/pdfModeStore'
 
 /**
  * @property {object[]} items
@@ -12,7 +13,7 @@ const props = defineProps({
    items: Array,
    linkLabel: String,
 })
-
+const pdfModeStore = usePdfModeStore()
 const language = useLanguage()
 const utils = useUtils()
 
@@ -68,7 +69,7 @@ function _getTagsForItem(item) {
             <p class="thread-item-description text-3 text-normal mb-1 mb-md-2" v-html="item.locales.description" />
 
             <!-- Link -->
-            <a v-if="item.href" class="text-2" target="_blank" :href="item.href">
+            <a v-if="item.href && !pdfModeStore.isPdfMode" class="text-2" target="_blank" :href="item.href">
                <span>{{ props.linkLabel }}</span>
                <i class="fa-solid fa-arrow-up-right-dots ms-1" />
             </a>

@@ -5,6 +5,7 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import { useData } from '../composables/data.js'
 import RouterView from '../vue/core/RouterView.vue'
+import Pdf from '../vue/pdf/Pdf.vue'
 
 export function createAppRouter() {
    const data = useData()
@@ -28,6 +29,13 @@ export function createAppRouter() {
          component: RouterView,
       })
    }
+
+   /** Create Pdf Preview */
+   routeList.push({
+      path: '/pdf-preview',
+      name: 'PdfPreview',
+      component: Pdf,
+   })
 
    /** Wildcard Route */
    routeList.push({
