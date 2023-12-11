@@ -1,3 +1,4 @@
+/* eslint-disable no-use-before-define */
 /**
  * Created by Dennis Ollhoff on 08.23.2023
  * This component will be responsible for overseeing and controlling the application's language.
