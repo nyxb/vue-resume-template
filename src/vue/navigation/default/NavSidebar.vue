@@ -1,73 +1,77 @@
-<template>
-    <nav class="nav-sidebar">
-        <!-- Main Content -->
-        <div class="nav-sidebar-content" v-if="profileData">
-            <!-- Profile Card -->
-            <NavProfileCard :profile-data="profileData"/>
-
-            <!-- Nav Link List -->
-            <ul class="nav-links">
-                <!-- Nav Link -->
-                <li v-for="section in data.getSections()" :class="_getNavItemClassList(section)">
-                    <button class="nav-link" @click="_onLinkClicked(section)">
-                        <i :class="section['faIcon']"/> {{ data.getString(section['id']) }}
-                    </button>
-                </li>
-            </ul>
-        </div>
-
-        <!-- Footer -->
-        <div class="nav-sidebar-footer" v-if="profileData">
-            <!-- Language Picker -->
-            <LanguagePicker />
-
-            <!-- Credits -->
-            <div class="nav-sidebar-footer-credits text-2 mt-3 mb-3">
-                <span v-html="profileData['locales']['credits']"/>
-            </div>
-        </div>
-    </nav>
-</template>
-
 <script setup>
-import LanguagePicker from "../../widgets/LanguagePicker.vue"
-import NavProfileCard from "../partials/NavProfileCard.vue"
-import {computed} from "vue"
-import {useData} from "../../../composables/data.js"
-import {useNavigation} from "../../../composables/navigation.js"
+import { computed } from 'vue'
+import LanguagePicker from '../../widgets/LanguagePicker.vue'
+import NavProfileCard from '../partials/NavProfileCard.vue'
+import { useData } from '../../../composables/data.js'
+import { useNavigation } from '../../../composables/navigation.js'
 
 const emit = defineEmits(['linkClicked'])
 const data = useData()
 const navigation = useNavigation()
 
 /**
- * @type {ComputedRef<Object>}
+ * @type {ComputedRef<object>}
  */
 const profileData = computed(() => {
-    return data.getProfile()
+   return data.getProfile()
 })
 
 /**
- * @param {Object} section
+ * @param {object} section
  * @private
  */
-const _getNavItemClassList = (section) => {
-    let classList = 'nav-item'
-    if(navigation.isSectionActive(section['id'])) {
-        classList += ' nav-item-selected'
-    }
+function _getNavItemClassList(section) {
+   let classList = 'nav-item'
+   if (navigation.isSectionActive(section.id))
+      classList += ' nav-item-selected'
 
-    return classList
+   return classList
 }
 
 /**
- * @param {Object} section
+ * @param {object} section
  * @private
  */
-const _onLinkClicked = (section) => {
-    emit('linkClicked', section['id'])
+function _onLinkClicked(section) {
+   emit('linkClicked', section.id)
 }
 </script>
+
+<template>
+   <nav class="nav-sidebar">
+      <!-- Main Content -->
+      <div v-if="profileData" class="nav-sidebar-content">
+         <!-- Profile Card -->
+         <NavProfileCard :profile-data="profileData" />
+
+         <!-- Nav Link List -->
+         <ul class="nav-links">
+            <!-- Nav Link -->
+            <li v-for="section in data.getSections()" :class="_getNavItemClassList(section)">
+               <button class="nav-link" @click="_onLinkClicked(section)">
+                  <i :class="section.faIcon" /> {{ data.getString(section.id) }}
+               </button>
+            </li>
+         </ul>
+      </div>
+
+      <!-- Footer -->
+      <div v-if="profileData" class="nav-sidebar-footer">
+         <!-- Language Picker -->
+         <LanguagePicker />
+
+         <!-- Download Button -->
+         <button class="nav-download-pdf text-2 mt-4" @click="onDownloadClick">
+            <i class="fa fa-download" /> Download PDF
+         </button>
+
+         <!-- Credits -->
+         <div class="nav-sidebar-footer-credits text-2 mt-3 mb-3">
+            <span v-html="profileData.locales.credits" />
+         </div>
+      </div>
+   </nav>
+</template>
 
 <style lang="scss" scoped>
 @import "/src/scss/_theming.scss";
