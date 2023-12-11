@@ -62,26 +62,6 @@
 
     "certifications": [
       {
-        "id": "red_hat_engineer",
-        "place": "@link{places.redhat}",
-        "date": "2016/11",
-        "href": "https://dennis-ollhoff.space/certifications/redhat.pdf",
-        "locales": {
-          "en": {
-            "title": "Red Hat Certified Engineer",
-            "description": "Certified as a Red Hat Certified Engineer on Red Hat Enterprise Linux 6; a recognition of advanced system administration skills."
-          },
-          "de": {
-            "title": "Red Hat Zertifizierter Ingenieur",
-            "description": "Als Red Hat Zertifizierter Ingenieur auf Red Hat Enterprise Linux 6 zertifiziert; eine Anerkennung fortgeschrittener Systemverwaltungsfähigkeiten."
-          },
-          "it": {
-            "title": "Ingegnere Certificato Red Hat",
-            "description": "Certificato come Ingegnere Certificato Red Hat su Red Hat Enterprise Linux 6; riconoscimento di competenze avanzate nell'amministrazione di sistemi."
-          }
-        }
-      },
-      {
         "id": "open_group_it_specialist",
         "place": "@link{places.open-group}",
         "date": "2012/12",
@@ -98,6 +78,26 @@
           "it": {
             "title": "Specialista IT Certificato Open",
             "description": "Incontrato con successo i requisiti del programma di certificazione per Specialista IT Certificato di The Open Group ed è stato assegnato il titolo di Specialista IT Certificato."
+          }
+        }
+      },
+      {
+        "id": "red_hat_engineer",
+        "place": "@link{places.redhat}",
+        "date": "2016/11",
+        "href": "https://dennis-ollhoff.space/certifications/redhat.pdf",
+        "locales": {
+          "en": {
+            "title": "Red Hat Certified Engineer",
+            "description": "Certified as a Red Hat Certified Engineer on Red Hat Enterprise Linux 6; a recognition of advanced system administration skills."
+          },
+          "de": {
+            "title": "Red Hat Zertifizierter Ingenieur",
+            "description": "Als Red Hat Zertifizierter Ingenieur auf Red Hat Enterprise Linux 6 zertifiziert; eine Anerkennung fortgeschrittener Systemverwaltungsfähigkeiten."
+          },
+          "it": {
+            "title": "Ingegnere Certificato Red Hat",
+            "description": "Certificato come Ingegnere Certificato Red Hat su Red Hat Enterprise Linux 6; riconoscimento di competenze avanzate nell'amministrazione di sistemi."
           }
         }
       },
