@@ -8,5 +8,7 @@ export default nyxb({
       'nyxb/no-import-node-modules-by-path': 0,
       'jsdoc/require-returns-description': 0,
       'jsdoc/require-property-description': 0,
+      'no-unused-vars': 0,
+      'unused-imports/no-unused-vars': 0,
    },
 })

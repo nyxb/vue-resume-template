@@ -123,7 +123,7 @@
       },
       {
         "id": "cisco_certified_network_associate",
-        "place": "@link{places.redhat}",
+        "place": "@link{places.ccna}",
         "date": "2023/12",
         "href": "https://dennis-ollhoff.space/certifications/ccna.pdf",
         "locales": {
