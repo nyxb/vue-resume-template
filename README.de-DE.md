@@ -44,6 +44,18 @@ pnpm run dev
  "preloaderEnabled": false
 ```
 
+## Einrichtung für das Herunterladen von Lebenslauf-PDFs
+
+Um den Benutzern das Herunterladen deines Lebenslaufs im PDF-Format zu ermöglichen, befolge bitte die folgenden Schritte:
+
+1. Platziere deine Lebenslauf-PDF-Dateien im Verzeichnis `public/cv/` innerhalb deines Projekts.
+2. Stelle sicher, dass jede PDF-Datei nach dem Schema `CV-LANGCODE.pdf` benannt ist, wobei `LANGCODE` den in deinen Spracheinstellungen festgelegten Sprachcodes entspricht (z.B. `CV-EN.pdf`, `CV-DE.pdf`, `CV-IT.pdf` usw.).
+
+### Individuelle Lebenslauf-Vorlage
+
+Zusätzlich habe ich eine anpassbare Lebenslauf-Vorlage in InDesign erstellt, die du gerne nutzen kannst. Du findest diese Vorlage unter dem folgenden Link: [InDesign Lebenslauf-Vorlage](https://665954502273.gumroad.com/l/enujv). Diese Vorlage ist so gestaltet, dass sie leicht anpassbar ist und dir helfen kann, ein konsistentes und professionelles Erscheinungsbild über verschiedene Versionen deines Lebenslaufs hinweg zu wahren.
+
+
 ## Anpassung der Vorlage
 
 ### 1. Inhalte ändern

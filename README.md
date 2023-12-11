@@ -45,6 +45,17 @@ pnpm run dev
  "preloaderEnabled": false
 ```
 
+## Resume PDF Download Setup
+
+To enable users to download your resume in PDF format, please follow these steps:
+
+1. Place your resume PDF files inside the `public/cv/` directory within your project. 
+2. Ensure that each PDF file is named according to the convention: `CV-LANGCODE.pdf`, where `LANGCODE` corresponds to the language codes specified in your language settings (e.g., `CV-EN.pdf`, `CV-DE.pdf`, `CV-IT.pdf`, etc.).
+
+### Custom Resume Template
+
+Additionally, I've crafted a customizable resume template in InDesign that you're welcome to utilize. You can find this template at the following link: [InDesign Resume template](https://665954502273.gumroad.com/l/enujv). This template is designed to be easily adaptable and can help you maintain a consistent and professional look across your various resume versions.
+
 ## Template Customization
 
 ### 1. Changing the content
